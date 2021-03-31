@@ -23,10 +23,11 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonPressed() {
         if loginTextField.text != "admin" || passwordTextField.text != "12345" {
-         showAlert(with: "Incorrect data", and: "please, enter true login and password")
-        } else {
-            passwordTextField.text = ""
+         showAlert(with: "Incorrect data", and: "Please, enter true login and password")
         }
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     @IBAction func forgotLogButton() {
