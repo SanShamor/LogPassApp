@@ -14,12 +14,18 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.welcomeValue = loginTextField.text!
+    }
+    
     @IBAction func loginButtonPressed() {
-        if loginTextField.text == "admin" && passwordTextField.text == "12345" {
+        if loginTextField.text != "admin" || passwordTextField.text != "12345" {
+         showAlert(with: "Incorrect data", and: "please, enter true login and password")
         } else {
-            showAlert(with: "Incorrect data", and: "plese, enter true login and password")
+            passwordTextField.text = ""
         }
     }
     
@@ -28,6 +34,11 @@ class LoginViewController: UIViewController {
     }
     @IBAction func forgotPassButton() {
         showAlert(with: "Correct PASSWORD is:", and: "12345")
+    }
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        //guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        loginTextField.text = ""
+        passwordTextField.text = ""
     }
     
 }
