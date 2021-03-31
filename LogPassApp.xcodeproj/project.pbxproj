@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		3645A2FC26145D5A001487F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645A2FB26145D5A001487F4 /* AppDelegate.swift */; };
 		3645A2FE26145D5A001487F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645A2FD26145D5A001487F4 /* SceneDelegate.swift */; };
-		3645A30026145D5A001487F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645A2FF26145D5A001487F4 /* ViewController.swift */; };
+		3645A30026145D5A001487F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645A2FF26145D5A001487F4 /* LoginViewController.swift */; };
 		3645A30326145D5A001487F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3645A30126145D5A001487F4 /* Main.storyboard */; };
 		3645A30526145D5B001487F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3645A30426145D5B001487F4 /* Assets.xcassets */; };
 		3645A30826145D5B001487F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3645A30626145D5B001487F4 /* LaunchScreen.storyboard */; };
+		3645A313261462AB001487F4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645A312261462AB001487F4 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3645A2F826145D5A001487F4 /* LogPassApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogPassApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3645A2FB26145D5A001487F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3645A2FD26145D5A001487F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3645A2FF26145D5A001487F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3645A2FF26145D5A001487F4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3645A30226145D5A001487F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3645A30426145D5B001487F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3645A30726145D5B001487F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3645A30926145D5B001487F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3645A312261462AB001487F4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				3645A2FB26145D5A001487F4 /* AppDelegate.swift */,
 				3645A2FD26145D5A001487F4 /* SceneDelegate.swift */,
-				3645A2FF26145D5A001487F4 /* ViewController.swift */,
+				3645A2FF26145D5A001487F4 /* LoginViewController.swift */,
+				3645A312261462AB001487F4 /* WelcomeViewController.swift */,
 				3645A30126145D5A001487F4 /* Main.storyboard */,
 				3645A30426145D5B001487F4 /* Assets.xcassets */,
 				3645A30626145D5B001487F4 /* LaunchScreen.storyboard */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3645A30026145D5A001487F4 /* ViewController.swift in Sources */,
+				3645A30026145D5A001487F4 /* LoginViewController.swift in Sources */,
+				3645A313261462AB001487F4 /* WelcomeViewController.swift in Sources */,
 				3645A2FC26145D5A001487F4 /* AppDelegate.swift in Sources */,
 				3645A2FE26145D5A001487F4 /* SceneDelegate.swift in Sources */,
 			);
