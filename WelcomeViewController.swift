@@ -10,18 +10,17 @@ import UIKit
 class WelcomeViewController: UIViewController {
 
     
-    var welcomeValue: String = ""
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var logOutButton: UIButton!
+    
+    var welcomeValue: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "welcome,dear \(welcomeValue)!"
+        logOutButton.layer.cornerRadius = 10
+        
+        welcomeLabel.text = "Славься, почтенный \(welcomeValue.person.fullname)!"
     }
-    
-    @IBAction func logOutButton() {
-        dismiss(animated: true)
-    }
-    
     
 
 }
